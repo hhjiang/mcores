@@ -46,10 +46,9 @@ X is the data matrix, where each row is a datapoint in euclidean space.
   result = model.predict(a)
 
 
-Toy clustering
-======
+**Toy clustering**
 
-See https://github.com/hhjiang/mcores/docs/clustercomparison.py
+See docs/clustercomparison.py
 
 Adapted from http://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html
 
