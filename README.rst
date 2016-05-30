@@ -1,6 +1,6 @@
 mcores
 ======
-clustering with modal-set estimation
+clustering with modal-set estimation.
 
 
 Usage
@@ -16,9 +16,9 @@ API is modelled after that of sklearn's clustering algorithms.
   
 k: number of neighbors in k-NN
 
-beta: ranges between 0 and 1. When the procedure is at level F, it examines level-set of kNN graph at level F - beta * F - epsilon
+beta: ranges between 0 and 1. When the procedure is at level F, it examines level-set of kNN graph at level F - beta * F - epsilon.
 
-epsilon: used for pruning away false cluster-cores
+epsilon: used for pruning away false cluster-cores.
 
 cluster_threshold: Determines the minimum threshold distance to classify points to its corresponding closest (Hausdorff distance) estimated modal-set. All other points do not get assigned to a cluster. If this paramter is None, then all points get assigned to some cluster.
 
@@ -29,7 +29,7 @@ cluster_threshold: Determines the minimum threshold distance to classify points 
   fit(X)
   predict(X)
   
-X is the data matrix, where each row is a datapoint in the euclidean space
+X is the data matrix, where each row is a datapoint in euclidean space.
 
 
 **Example** (mixture of two gaussians):
@@ -45,6 +45,15 @@ X is the data matrix, where each row is a datapoint in the euclidean space
   
   result = model.predict(a)
 
+
+Toy clustering
+======
+
+See https://github.com/hhjiang/mcores/docs/clustercomparison.py
+
+Adapted from http://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html
+
+.. image:: docs/clustercomparison.png
 
 
 
