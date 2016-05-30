@@ -20,7 +20,7 @@ beta: ranges between 0 and 1. When the procedure is at level F, it examines leve
 
 epsilon: used for pruning away false cluster-cores.
 
-cluster_threshold: Determines the minimum threshold distance to classify points to its corresponding closest (Hausdorff distance) estimated modal-set. All other points do not get assigned to a cluster. If this paramter is None, then all points get assigned to some cluster.
+cluster_threshold: Determines the minimum threshold distance to classify points to its corresponding closest (Hausdorff distance) estimated modal-set. All other points do not get assigned to a cluster. If None, then all points get assigned to some cluster.
 
 **Finding Clusters**:
 
@@ -31,6 +31,7 @@ cluster_threshold: Determines the minimum threshold distance to classify points 
   
 X is the data matrix, where each row is a datapoint in euclidean space.
 
+fit estimates the modal-sets while predict assigns each point to a cluster (0-based index) if possible and -1 otherwise. 
 
 **Example** (mixture of two gaussians):
 
