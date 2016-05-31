@@ -1,5 +1,5 @@
 
-stly taken from http://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html
+#mostly taken from http://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html
 
 %matplotlib inline
 
